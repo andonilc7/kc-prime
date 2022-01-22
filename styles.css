@@ -123,7 +123,7 @@ section.top {
   bottom: 0;
   left: 100%;
  
-  -webkit-backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(1rem);
   
   
