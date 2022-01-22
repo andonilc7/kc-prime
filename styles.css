@@ -115,9 +115,9 @@ section.top {
   }
 
   .nav-container {
+  background-color: hsla(var(--clr-light),0.1);
   position: fixed;
   top: 100px;
-  background-color: hsla(var(--clr-light),0.1);
   top: 0;
   right: 0;
   bottom: 0;
