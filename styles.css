@@ -109,7 +109,8 @@ section.top {
     background-repeat: no-repeat;
     background-position: center;
     width: 1.5rem;
-    aspect-ratio: 1;
+    height: 1.5rem;
+
     
   }
 
@@ -117,29 +118,59 @@ section.top {
   position: fixed;
   top: 100px;
   background-color: hsla(var(--clr-light),0.1);
-  inset: 0 0 0 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+ 
   backdrop-filter: blur(1rem);
   
+  
+
+  }
+
+  @supports not (backdrop-filter: blur(1rem)){
+    .nav-container {
+      background-color: hsla(var(--clr-burgundy), 0.95);
+    }
   }
 @keyframes nav-slide-in {
-  0% {inset: 0 0 0 100%;}
-  100% {inset: 0 0 0 35%;}
+  0% {top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;}
+  100% {top: 0;
+    right: 0;
+    bottom: 0;
+    left: 35%;}
 }
   .nav-container[data-visible="true"] {
     animation-name: nav-slide-in;
     animation-duration: .5s;
-    inset: 0 0 0 35%;}
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 35%;}
   }
 
 
   @keyframes nav-slide-out {
-    0% {inset: 0 0 0 35%;}
-    100% {inset: 0 0 0 100%;}
+    0% {top: 0;
+      right: 0;
+      bottom: 0;
+      left: 35%;}
+    100% {top: 0;
+      right: 0;
+      bottom: 0;
+      left: 100%;}
   }
   .nav-container[data-visible="false"] {
     animation-name: nav-slide-out;
     animation-duration: .5s;
-    inset: 0 0 0 100%;}
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;}
   
 
   
