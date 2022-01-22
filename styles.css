@@ -239,12 +239,16 @@ p {
 }
 
 .kc-info h3 {
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   font-size: 1.75rem;
   padding-bottom: .15em;
 }
 
 .kc-info p {
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   font-size: 1.15rem;
 }
