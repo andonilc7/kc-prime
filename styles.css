@@ -124,12 +124,13 @@ section.top {
   left: 100%;
  
   backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
   
   
 
   }
 
-  @supports not (backdrop-filter: blur(1rem)){
+  @supports not ((-webkit-backdrop-filter: blur(1rem))or(backdrop-filter: blur(1rem);)){
     .nav-container {
       background-color: hsla(var(--clr-burgundy), 0.95);
     }
