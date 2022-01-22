@@ -199,7 +199,7 @@ section.top {
 
 
 
-
+/* sentence section */
 section.kc-sentence {
   flex:1;
   padding: 7em 1em;
@@ -218,6 +218,7 @@ p {
   max-width: 55ch;
 }
 
+/* second picture */
 .second-pic {
   min-height: 300px;
   background-image: url(19.jpg);
@@ -226,9 +227,31 @@ p {
   background-position: center center;
 }
 
+
+/* kc prime info section */
 .kc-info {
+  padding: 5em 4em;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5em;
 }
+
+.kc-info h3 {
+  text-align: center;
+  font-size: 1.75rem;
+  padding-bottom: .15em;
+}
+
+.kc-info p {
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+
+
+
 @media (min-width: 40em) {
   header {
     display: flex;
@@ -260,6 +283,20 @@ p {
     color:white;
   }
   .top {
-    height: 1000px
+    height: 1000px;
+    width: auto;
   }
+
+  .second-pic { 
+    height: max(600px, 35vw);
+  }
+
+
+  /* kc prime info section desktop */
+  .kc-info {
+    flex-direction: row;
+    gap: min(12em, 20%);
 }
+}
+
+
