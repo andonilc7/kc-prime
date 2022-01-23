@@ -115,7 +115,7 @@ section.top {
   }
 
   .nav-container {
-  background-color: hsla(var(--clr-light),0.1);
+  
   position: fixed;
   top: 100px;
   top: 0;
@@ -123,17 +123,26 @@ section.top {
   bottom: 0;
   left: 100%;
  
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(1rem);
+  background-color: hsla(var(--clr-burgundy), 0.95);
+  
+  
   
   
   
 
   }
 
-  @supports not ((-webkit-backdrop-filter: blur(1rem))and(backdrop-filter: blur(1rem);)){
+  @supports  (-webkit-backdrop-filter: blur(1rem)) {
     .nav-container {
-      background-color: hsla(var(--clr-burgundy), 0.95);
+      background-color: hsla(var(--clr-light),0.1);
+      -webkit-backdrop-filter: blur(1rem);
+    }
+  }
+
+  @supports (backdrop-filter: blur(1rem)) {
+    .nav-container {
+      background-color: hsla(var(--clr-light),0.1);
+      backdrop-filter: blur(1rem);
     }
   }
 @keyframes nav-slide-in {
