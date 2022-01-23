@@ -16,3 +16,26 @@ navToggle.addEventListener('click', function() {
       body.style.overflow = "hidden";
   }
 ;})
+
+
+
+
+
+// menu card flipping
+const card = document.querySelector('.card');
+const front = document.querySelector('.front');
+const back = document.querySelector('.back');
+
+card.addEventListener('click', function() {
+  const whatSide = card.getAttribute('data-side');
+  console.log(whatSide);
+
+  if (whatSide=="front-initial") {
+    card.setAttribute("data-side", "back");
+  } else if (whatSide=="back") {
+    card.setAttribute("data-side", "front");
+  } else if (whatSide=="front") {
+    card.setAttribute("data-side", "back");
+  
+}
+;})
