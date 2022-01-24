@@ -28,7 +28,9 @@ body {
   background-color: hsl(var(--clr-light));
   font-family: 'Nunito', sans-serif;
 }
-
+header {
+  z-index: 1000;
+}
   .nav-container a{
   color: black;
   font-weight: 400;
@@ -206,6 +208,7 @@ header {
       width: min(30%, 275px);
       height:auto;
     }
+  
     .nav-container ul {
       display: flex;
       flex-direction: row;
@@ -224,7 +227,7 @@ header {
       color:black;
     }
 
-
+  }
 
 
 
@@ -238,3 +241,5 @@ header {
 }
 
 
+
+  

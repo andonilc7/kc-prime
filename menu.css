@@ -1,9 +1,9 @@
 .card-container {
   position: relative;
   width: 250px;
-  height: 320px;
+  height: 250px;
   
-  background: green;
+  /* background: green; */
 }
 
 .card {
@@ -11,16 +11,13 @@
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: all 0.5s ease;
+  transition: all 0.75s ease;
   background: yellow;
+  border-radius: 12px;
 }
 
-.card[data-visible="back"] {
+.is-flipped {
   transform: rotateY(180deg);
-}
-
-.card[data-visible="front"] {
-  transform: rotateY(-180deg);
 }
 
 .front {
@@ -30,7 +27,10 @@
   backface-visibility: hidden;
   background: #ffc728;
   color: #333;
-
+  border-radius: 12px;
+  background: url(Screenshot_20220123-220532_Instagram.jpg);
+  background-position: center center;
+  background-size: cover;
 }
 
 .back {
@@ -38,7 +38,26 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background: #fafafa;
-  color: #333;
+  background: #252525;
+  color: hsl(var(--clr-light));
   transform: rotateY(180deg);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.card-big-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 4em;
+}
+
