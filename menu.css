@@ -12,7 +12,6 @@
   height: 100%;
   transform-style: preserve-3d;
   transition: all 0.75s ease;
-  background: yellow;
   border-radius: 12px;
 }
 
@@ -25,13 +24,36 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background: #ffc728;
+  background: transparent;
   color: #333;
   border-radius: 12px;
+  
+}
+
+.cowboy {
   background: url(Screenshot_20220123-220532_Instagram.jpg);
   background-position: center center;
   background-size: cover;
 }
+
+.ny-strip {
+  background: url(swordfish.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.surf-and-turf {
+  background: url(surf-and-turf.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.red-snapper {
+  background: url(red-snapper.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
 
 .back {
   position: absolute;
@@ -61,3 +83,29 @@
   margin-top: 4em;
 }
 
+.menu-title-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 4em;
+}
+
+.menu-title {
+  font-size: 3rem;
+}
+
+.menu-tab {
+  display:flex;
+  flex-wrap: nowrap;
+  background-color: lightgray;
+  width: max-content;
+}
+
+.menu-tab > * {
+  border: 1px solid grey;
+  width: max-content;
+  overflow: hidden;
+}
+
+.menu-tab > * > * {
+  padding: .35em 1em;
+}

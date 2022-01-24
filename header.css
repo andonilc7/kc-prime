@@ -199,7 +199,7 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center;  
-      background-color: none;
+      background-color: hsla(var(--clr-burgundy), .88);
       background-image: none;
     }
    
@@ -224,7 +224,7 @@ header {
   
     .nav-container a {
       font-weight: 400;
-      color:black;
+      color:hsl(var(--clr-light));
     }
 
   }
@@ -242,4 +242,8 @@ header {
 
 
 
-  
+.menu-title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
