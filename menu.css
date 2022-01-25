@@ -130,9 +130,9 @@
     border: 1px solid hsla(var(--clr-burgundy), 0.9);
   }
 
-  .menu-tab::-webkit-scrollbar-track {
+  /* .menu-tab::-webkit-scrollbar-track {
     
-  }
+  } */
 
   .menu-tab::-webkit-scrollbar-thumb {
     border-radius: 20px;
