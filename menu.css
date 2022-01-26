@@ -88,14 +88,14 @@
   margin-top: 4em;
 }
 
-@supports (gap:2em) {
+/* @supports (gap:2em) {
   .card-big-container {
     margin: 0;
   }
   .menu-container {
     gap: 2em;
   }
-}
+} */
 
 .menu-title-section {
   display: flex;
