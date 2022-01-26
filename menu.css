@@ -11,12 +11,14 @@
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transition: all 0.75s ease;
   border-radius: 12px;
 }
 
 .is-flipped {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .front {
@@ -63,6 +65,7 @@
   background: #252525;
   color: hsl(var(--clr-light));
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -140,6 +143,7 @@
     outline: 1px solid #D17911;
   }
 
+  /* need to play around with different values for this, also don't forget about .menu-container  padding */
   .card-container {
     width: 160px;
     height: 160px;
