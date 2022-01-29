@@ -34,69 +34,89 @@
   border-radius: 12px;
 }
 .calamari {
-  background: url(calamari.jpg);
+  background: url(./img/calamari.jpg);
   background-position: center center;
   background-size: cover;
 }
 
 .grilled-crusted-shrimp {
-  background: url(grilled-crusted-shrimp.jpg);
+  background: url(./img/grilled-crusted-shrimp.jpg);
   background-position: center center;
   background-size: cover;
 }
 .kc-sliders {
-  background: url(kc-sliders.jpg);
+  background: url(./img/kc-sliders.jpg);
   background-position: center center;
   background-size: cover;
 }
 
 .tuna-tacos {
-  background: url(tuna-tacos.jpg);
+  background: url(./img/tuna-tacos.jpg);
   background-position: center center;
   background-size: cover;
 }
 
 .baby-arugula {
-  background: url(baby-arugula.jpg);
+  background: url(./img/baby-arugula.jpg);
   background-position: center center;
   background-size: cover;
 }
 
 .kc-burger {
-  background: url(kc-burger.jpg);
+  background: url(./img/kc-burger.jpg);
   background-position: center center;
   background-size: cover;
 }
+
+.chilled-seafood {
+  background: url(./img/chilled-seafood.jpg);
+  background-position: center bottom;
+  background-size: cover;
+}
 .cowboy {
-  background: url(Screenshot_20220123-220532_Instagram.jpg);
+  background: url(./img/Screenshot_20220123-220532_Instagram.jpg);
   background-position: center center;
   background-size: cover;
 }
 
 .swordfish {
-  background: url(swordfish.jpg);
+  background: url(./img/swordfish.jpg);
   background-position: center center;
   background-size: cover;
 }
 
 .surf-and-turf {
-  background: url(surf-and-turf.jpg);
+  background: url(./img/surf-and-turf.jpg);
   background-position: center center;
   background-size: cover;
 }
 
 .red-snapper {
-  background: url(red-snapper.jpg);
+  background: url(./img/red-snapper.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.ny-strip {
+  background: #252525;
+  background-position: center center;
+  background-size: cover;
+}
+.lamb-chops {
+  background: url(./img/lamb-chops.jpg);
   background-position: center center;
   background-size: cover;
 }
 
 .half-roasted-chicken {
-  background: url(half-roasted-chicken.jpg);
+  background: url(./img/half-roasted-chicken.jpg);
   background-position: center center;
   background-size: cover;
 }
 
+.back > p {
+  max-width: 90%;
+}
 .back {
   position: absolute;
   width: 100%;
@@ -119,8 +139,12 @@
   flex-direction: column;
 }
 
-.card-big-container > p {
+.card-big-container > div {
   max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-container {
@@ -196,7 +220,7 @@
   .card-big-container {
     width: 160px;
   }
-  .card-big-container > p {
+  .card-big-container > div {
     max-width: 160px;
     min-height: 44px; /* do something about alignment when there are more lines to the text*/
   }

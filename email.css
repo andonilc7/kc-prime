@@ -1,0 +1,15 @@
+.container > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form > input[type="text"] {
+  width: 15em;
+  margin: 0.25em 0;
+}
+
+form > input[type="submit"] {
+  width: 10em;
+  margin: 0.5em 0;
+}

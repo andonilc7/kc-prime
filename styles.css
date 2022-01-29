@@ -1,10 +1,10 @@
 :root {
-    --clr-light: 51.4,20%,93.1%;
-    --clr-burgundy: 359.3,84.3%,20%;
+  --clr-light: 51.4, 20%, 93.1%;
+  --clr-burgundy: 359.3, 84.3%, 20%;
 }
 
 html {
-    min-height: 100%;
+  min-height: 100%;
 }
 
 *,
@@ -25,16 +25,15 @@ picture {
 }
 
 body {
-    background-color: hsl(var(--clr-light));
-    font-family: 'Nunito', sans-serif;
+  background-color: hsl(var(--clr-light));
+  font-family: "Nunito", sans-serif;
 }
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
-    min-height: 100vh;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 /* header */
@@ -42,25 +41,22 @@ header {
   position: sticky;
 }
 .logo {
-    width: 119px;
-    height: auto;
+  width: 119px;
+  height: auto;
 }
 
 .logo-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
-
 section.top {
-  min-height: 500px; 
-  background-image: url(29.jpg);
+  min-height: 500px;
+  background-image: url(./img/29.jpg);
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   background-position: center center;
-  
-  
 }
 
 .mobile-nav-toggle {
@@ -90,7 +86,6 @@ section.top {
     /* position: absolute; */
     left: 0.5em;
     top: 0.5em;
-
   }
   .mobile-nav-toggle {
     padding: 0;
@@ -103,114 +98,105 @@ section.top {
     top: 1.5em; */
     background: transparent;
     border: 0;
-    background-image: url(icon-hamburger.svg);
-    background-size:1.5rem;
-   
+    background-image: url(./img/icon-hamburger.svg);
+    background-size: 1.5rem;
+
     background-repeat: no-repeat;
     background-position: center;
     width: 1.5rem;
     height: 1.5rem;
-
-    
   }
 
   .nav-container {
-  
-  position: fixed;
-  top: 100px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 100%;
- 
-  background-color: hsla(var(--clr-burgundy), 0.95);
-  
-  
-  
-  
-  
+    position: fixed;
+    top: 100px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
 
+    background-color: hsla(var(--clr-burgundy), 0.95);
   }
 
-  @supports  (-webkit-backdrop-filter: blur(1rem)) {
+  @supports (-webkit-backdrop-filter: blur(1rem)) {
     .nav-container {
-      background-color: hsla(var(--clr-light),0.1);
+      background-color: hsla(var(--clr-light), 0.1);
       -webkit-backdrop-filter: blur(1rem);
     }
   }
 
   @supports (backdrop-filter: blur(1rem)) {
     .nav-container {
-      background-color: hsla(var(--clr-light),0.1);
+      background-color: hsla(var(--clr-light), 0.1);
       backdrop-filter: blur(1rem);
     }
   }
-@keyframes nav-slide-in {
-  0% {top: 0;
-    right: 0;
-    bottom: 0;
-    left: 100%;}
-  100% {top: 0;
-    right: 0;
-    bottom: 0;
-    left: 35%;}
-}
+  @keyframes nav-slide-in {
+    0% {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 100%;
+    }
+    100% {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 35%;
+    }
+  }
   .nav-container[data-visible="true"] {
     animation-name: nav-slide-in;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 35%;}
+    left: 35%;
   }
+}
 
-
-  @keyframes nav-slide-out {
-    0% {top: 0;
-      right: 0;
-      bottom: 0;
-      left: 35%;}
-    100% {top: 0;
-      right: 0;
-      bottom: 0;
-      left: 100%;}
-  }
-  .nav-container[data-visible="false"] {
-    animation-name: nav-slide-out;
-    animation-duration: .5s;
+@keyframes nav-slide-out {
+  0% {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 100%;}
-  
-
-  
-
-  .nav-container ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 6em;
-    
+    left: 35%;
   }
-  .nav-container ul > li {
-    padding: 0.5em 0;
+  100% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
   }
-  
+}
+.nav-container[data-visible="false"] {
+  animation-name: nav-slide-out;
+  animation-duration: 0.5s;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+}
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
+.nav-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 6em;
+}
+.nav-container ul > li {
+  padding: 0.5em 0;
+}
 
-
-
-
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
 /* sentence section */
 section.kc-sentence {
-  flex:1;
+  flex: 1;
   padding: 7em 1em;
   display: flex;
   flex-direction: column;
@@ -220,7 +206,7 @@ section.kc-sentence {
 }
 
 .kc-sentence > h2 {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 p {
@@ -230,12 +216,11 @@ p {
 /* second picture */
 .second-pic {
   min-height: 300px;
-  background-image: url(19.jpg);
+  background-image: url(./img/19.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-
 
 /* kc prime info section */
 .kc-info {
@@ -252,7 +237,7 @@ p {
   margin-left: auto;
   text-align: center;
   font-size: 1.75rem;
-  padding-bottom: .15em;
+  padding-bottom: 0.15em;
 }
 
 .kc-info p {
@@ -262,21 +247,18 @@ p {
   font-size: 1.15rem;
 }
 
-
-
-
 @media (min-width: 40em) {
   header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(hsla(var(--clr-burgundy), 1),  transparent);
+    background: linear-gradient(hsla(var(--clr-burgundy), 1), transparent);
   }
- 
+
   .logo {
     margin-top: 0.75em;
     width: min(30%, 275px);
-    height:auto;
+    height: auto;
   }
   .nav-container ul {
     display: flex;
@@ -286,30 +268,27 @@ p {
   }
 
   .nav-container ul > li {
-    margin: 0 .5em;
+    margin: 0 0.5em;
     padding: 0.75em 1em;
     font-size: 1.15rem;
   }
 
   .nav-container a {
     font-weight: 500;
-    color:white;
+    color: white;
   }
   .top {
     height: 1000px;
     width: auto;
   }
 
-  .second-pic { 
+  .second-pic {
     height: max(600px, 35vw);
   }
-
 
   /* kc prime info section desktop */
   .kc-info {
     flex-direction: row;
     gap: min(12em, 20%);
+  }
 }
-}
-
-
