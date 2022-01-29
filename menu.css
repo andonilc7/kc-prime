@@ -32,7 +32,6 @@
   background: transparent;
   color: #333;
   border-radius: 12px;
-  
 }
 .calamari {
   background: url(calamari.jpg);
@@ -98,7 +97,6 @@
   background-size: cover;
 }
 
-
 .back {
   position: absolute;
   width: 100%;
@@ -129,12 +127,11 @@
   display: none;
 }
 .menu-container.active {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-    justify-content: center;
-    margin-top: 4em;
-  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 2em;
 }
 
 .menu-tab {
@@ -142,10 +139,12 @@
 }
 
 .menu-tab:hover {
-  background-color: white;
-  
+  background-color: #f59c2f;
 }
 
+.menu-tab.active {
+  background-color: #f59c2f;
+}
 
 .menu-title-section {
   display: flex;
@@ -159,23 +158,36 @@
 
 .menu-tab-container {
   margin-top: 1.25em;
-  display:flex;
+  display: flex;
   flex-wrap: nowrap;
   background-color: lightgray;
   width: max-content;
-  
 }
 
 .menu-tab {
   border: 1px solid grey;
   width: max-content;
- 
+
   white-space: nowrap;
 }
 
 .menu-tab > * {
-  padding: .35em 1em;
+  padding: 0.35em 1em;
+}
 
+.img-click-message {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5em;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.specials-message {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  display: none;
 }
 
 @media (max-width: 40em) {
@@ -189,7 +201,6 @@
   .menu-tab-container {
     max-width: 90vw;
     overflow-x: auto;
-    
   }
 
   .menu-tab-container::-webkit-scrollbar {
@@ -197,7 +208,7 @@
     margin-top: 5px;
     height: 7px;
     width: 2px;
-    background-color: hsla(var(--clr-burgundy),0.9);
+    background-color: hsla(var(--clr-burgundy), 0.9);
     border: 1px solid hsla(var(--clr-burgundy), 0.9);
   }
 
@@ -207,8 +218,8 @@
 
   .menu-tab-container::-webkit-scrollbar-thumb {
     border-radius: 20px;
-    background-color: #D17911;
-    outline: 1px solid #D17911;
+    background-color: #d17911;
+    outline: 1px solid #d17911;
   }
 
   /* need to play around with different values for this, also don't forget about .menu-container  padding */
@@ -216,7 +227,4 @@
     width: 160px;
     height: 160px;
   }
-
-
 }
-
