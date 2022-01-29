@@ -48,5 +48,6 @@ menuTabs.forEach(function(menuTab) {
     })
     // console.log(target);
     target.classList.add('active');
+
   })
 })
