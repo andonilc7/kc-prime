@@ -2,8 +2,6 @@
   position: relative;
   width: 250px;
   height: 250px;
-  
-  /* background: green; */
 }
 
 .card-big-container {
@@ -186,6 +184,7 @@
   }
   .card-big-container > p {
     max-width: 160px;
+    min-height: 44px; /* do something about alignment when there are more lines to the text*/
   }
   .menu-tab-container {
     max-width: 90vw;
