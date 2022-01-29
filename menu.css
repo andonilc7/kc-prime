@@ -6,6 +6,10 @@
   /* background: green; */
 }
 
+.card-big-container {
+  width: 250px;
+}
+
 .card {
   position: absolute;
   width: 100%;
@@ -177,6 +181,9 @@
 }
 
 @media (max-width: 40em) {
+  .card-big-container {
+    width: 160px;
+  }
   .card-big-container > p {
     max-width: 160px;
   }
