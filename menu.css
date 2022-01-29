@@ -119,6 +119,10 @@
   flex-direction: column;
 }
 
+.card-big-container > p {
+  max-width: 250px;
+}
+
 .menu-container {
   display: none;
 }
@@ -173,6 +177,9 @@
 }
 
 @media (max-width: 40em) {
+  .card-big-container > p {
+    max-width: 160px;
+  }
   .menu-tab-container {
     max-width: 90vw;
     overflow-x: auto;
