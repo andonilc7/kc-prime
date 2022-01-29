@@ -29,6 +29,24 @@ console.log(cards);
 cards.forEach(item => {
   item.addEventListener('click', function() {
   item.classList.toggle('is-flipped');
-  console.log(cards);
+  // console.log(cards);
 
 })});
+
+
+const menuTabs = document.querySelectorAll('[data-tab-target]');
+const menuContainers = document.querySelectorAll('.menu-container');
+
+
+menuTabs.forEach(function(menuTab) {
+
+  menuTab.addEventListener('click', function() {
+    const target = document.querySelector(menuTab.dataset.tabTarget);
+    menuContainers.forEach(function(menuContainer){
+      menuContainer.classList.remove('active');
+
+    })
+    // console.log(target);
+    target.classList.add('active');
+  })
+})
