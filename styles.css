@@ -362,12 +362,15 @@ p {
   .third-pic {
     height: max(600px, 35vw);
   }
+  .bottom-nav ul > li {
+    margin: 1.5em 1.5em;
+  }
+}
+
+@media (min-width: 840px) {
   /* kc prime info section desktop */
   .kc-info {
     flex-direction: row;
     gap: min(12em, 20%);
-  }
-  .bottom-nav ul > li {
-    margin: 1.5em 1.5em;
   }
 }
