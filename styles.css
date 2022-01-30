@@ -240,11 +240,75 @@ p {
   padding-bottom: 0.15em;
 }
 
+.third-pic {
+  min-height: 300px;
+  background-image: url(img/04.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 .kc-info p {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
   font-size: 1.15rem;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.socials {
+  display: flex;
+  margin-top: 3.5em;
+  justify-content: center;
+  align-items: center;
+}
+.socials-svg {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.facebook {
+  border-radius: 4px;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: hsl(var(--clr-burgundy));
+  font-weight: 400;
+}
+
+.bottom-nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-nav ul > li {
+  margin: 1.5em 1.5em;
+}
+
+.bottom-logo {
+  width: 180px;
+  height: auto;
+}
+
+.img-and-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  color: grey;
+  font-size: 12px;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 @media (min-width: 40em) {
@@ -256,6 +320,12 @@ p {
   }
 
   .logo {
+    margin-top: 0.75em;
+    width: min(30%, 275px);
+    height: auto;
+  }
+
+  .bottom-logo {
     margin-top: 0.75em;
     width: min(30%, 275px);
     height: auto;
@@ -286,6 +356,9 @@ p {
     height: max(600px, 35vw);
   }
 
+  .third-pic {
+    height: max(600px, 35vw);
+  }
   /* kc prime info section desktop */
   .kc-info {
     flex-direction: row;

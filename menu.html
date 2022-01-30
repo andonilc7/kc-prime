@@ -17,256 +17,291 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <header>
-      <img src="img/kcprime-logo.png" class="logo" />
-      <button class="mobile-nav-toggle"></button>
+    <div class="container">
+      <header>
+        <img src="img/kcprime-logo.png" class="logo" />
+        <button class="mobile-nav-toggle"></button>
 
-      <div class="nav-container" data-visible="false-initial">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="email.html">VIP-Email List</a></li>
-            <li><a href="photos.html">Photos</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <section class="menu-title-section">
-      <h1 class="menu-title">Menu</h1>
+        <div class="nav-container" data-visible="false-initial">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="email.html">VIP-Email List</a></li>
+              <li><a href="photos.html">Photos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="menu-title-section">
+        <h1 class="menu-title">Menu</h1>
 
-      <div class="menu-tab-container">
-        <div class="menu-tab active" data-tab-target=".appetizers">
-          <div>appetizers</div>
+        <div class="menu-tab-container">
+          <div class="menu-tab active" data-tab-target=".appetizers">
+            <div>appetizers</div>
+          </div>
+          <div class="menu-tab" data-tab-target=".salads">
+            <div>salads</div>
+          </div>
+          <div class="menu-tab" data-tab-target=".sandwiches">
+            <div>sandwiches</div>
+          </div>
+          <div class="menu-tab" data-tab-target=".specials">
+            <div>specials *</div>
+          </div>
+          <div class="menu-tab" data-tab-target=".prime-meats">
+            <div>prime meats</div>
+          </div>
+          <div class="menu-tab" data-tab-target=".entrees">
+            <div>entreés</div>
+          </div>
+          <div class="menu-tab" data-tab-target=".sides"><div>sides</div></div>
         </div>
-        <div class="menu-tab" data-tab-target=".salads"><div>salads</div></div>
-        <div class="menu-tab" data-tab-target=".sandwiches">
-          <div>sandwiches</div>
-        </div>
-        <div class="menu-tab" data-tab-target=".specials">
-          <div>specials *</div>
-        </div>
-        <div class="menu-tab" data-tab-target=".prime-meats">
-          <div>prime meats</div>
-        </div>
-        <div class="menu-tab" data-tab-target=".entrees">
-          <div>entreés</div>
-        </div>
-        <div class="menu-tab" data-tab-target=".sides"><div>sides</div></div>
+      </section>
+      <div class="specials-message">
+        <p>
+          * These items are not available every night. Call for more
+          information.
+        </p>
       </div>
-    </section>
-    <div class="specials-message">
-      <p>
-        * These items are not available every night. Call for more information.
-      </p>
+      <div class="img-click-message">
+        <p>Click each image to view the ingredients</p>
+        <p></p>
+      </div>
+      <section>
+        <div class="menu-container appetizers active">
+          <div class="card-big-container">
+            <div><p>grilled crusted shrimp - 17.00</p></div>
+            <div class="card-container">
+              <div class="card">
+                <div class="front grilled-crusted-shrimp"></div>
+                <div class="back"><p>tangy remoulade, lemon</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-big-container">
+            <div><p>sweet and spicy calamari - 14.00</p></div>
+            <div class="card-container">
+              <div class="card">
+                <div class="front calamari"></div>
+                <div class="back">
+                  <p>sweet raspberry balsamic, sriracha aioli</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-big-container">
+            <div><p>kc prime sliders - 15.00</p></div>
+            <div class="card-container">
+              <div class="card">
+                <div class="front kc-sliders"></div>
+                <div class="back">
+                  <p>pickle, aged cheddar cheese, Hawaiian Roll</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-big-container">
+            <div><p>spicy tuna tacos - 14.00</p></div>
+            <div class="card-container">
+              <div class="card">
+                <div class="front tuna-tacos"></div>
+                <div class="back">
+                  <p>wonton shell, spicy aioli, avocado puree</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-container salads">
+          <div class="card-big-container">
+            <div><p>baby arugula salad - 12.00</p></div>
+            <div class="card-container">
+              <div class="card">
+                <div class="front baby-arugula"></div>
+                <div class="back">
+                  <p>
+                    anjou pear, crumbled gorgonzola, candied walnuts, white
+                    balsamic vinaigrette
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-container sandwiches">
+          <div class="card-big-container">
+            <div><p>kc burger - 16.00</p></div>
+            <div class="card-container">
+              <div class="card">
+                <div class="front kc-burger"></div>
+                <div class="back">
+                  <p>
+                    smoked gouda, caramelized onion, crisp bacon, chili aioli,
+                    brioche
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-container prime-meats">
+          <div class="card-big-container">
+            <div><p>ny strip - 38.00</p></div>
+            <div class="card-container">
+              <div class="card">
+                <div class="front ny-strip"></div>
+                <div class="back">
+                  <p>Baked potato, peppercorn steak sauce</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-big-container">
+            <div><p>grilled lamb chops - 46.00</p></div>
+            <div class="card-container">
+              <div class="card">
+                <div class="front lamb-chops"></div>
+                <div class="back">
+                  <p>
+                    Yukon gold mashed potatoes, sauteed spinach, port win
+                    demi-glace
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-container specials">
+          <div class="card-big-container">
+            <div><p>chilled seafood appetizer - 47.00</p></div>
+            <div class="card-container">
+              <div class="card">
+                <div class="front chilled-seafood"></div>
+                <div class="back">
+                  <p>
+                    1/2 lobster tail, 2 shrimp, 2 scallops, 2 clams, 2 oysters,
+                    ahi tuna
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-big-container">
+            <div><p>18 oz. cowboy ribeye - 69.00?</p></div>
+            <div class="card-container">
+              <div class="card">
+                <div class="front cowboy"></div>
+                <div class="back">
+                  <p>
+                    fingerling potatoes tossed with charred scallions, grilled
+                    brocolinni, port wine demi-glace
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-big-container">
+            <div><p>swordfish - ??.00</p></div>
+            <div class="card-container">
+              <div class="card">
+                <div class="front swordfish"></div>
+                <div class="back">vegetable succotash, salsa verde</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-big-container">
+            <div><p>surf and turf - 58.00</p></div>
+            <div class="card-container">
+              <div class="card">
+                <div class="front surf-and-turf"></div>
+                <div class="back">
+                  <p>
+                    8 oz. filet mignon, 6 oz. broiled lobster tail, mashed
+                    potatoes, julienne vegetables, drawn butter
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-big-container">
+            <div><p>red snapper - ??.00</p></div>
+            <div class="card-container">
+              <div class="card">
+                <div class="front red-snapper"></div>
+                <div class="back">
+                  <p>jasmine rice, spinach, lemon beurre-blanc</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-container entrees">
+          <div class="card-big-container">
+            <div><p>roasted half chicken - 27.00</p></div>
+            <div class="card-container">
+              <div class="card">
+                <div class="front half-roasted-chicken"></div>
+                <div class="back">
+                  <p>Yukon gold mashed potatoes, broccoli, natural jus</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-container sides">
+          <div class="card-big-container">
+            <div><p>lobster mac n' cheese - 15.00</p></div>
+            <div class="card-container">
+              <div class="card">
+                <div class="front lobster-mac-n-cheese"></div>
+                <div class="back"><p></p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div class="email"></div> -->
+      <section class="footer">
+        <footer>
+          <div class="socials">
+            <a href="https://www.facebook.com/KCPrimeSteakhouse/"
+              ><img
+                class="socials-svg facebook"
+                src="img/iconmonstr-facebook-6.svg"
+            /></a>
+            <a href="https://www.instagram.com/kcprimesteakhousenj/"
+              ><img
+                class="socials-svg instagram"
+                src="img/iconmonstr-instagram-11.svg"
+            /></a>
+          </div>
+          <nav class="bottom-nav">
+            <ul>
+              <li><a href="home.html">home</a></li>
+              <li><a href="menu.html">menu</a></li>
+              <li><a href="email.html">VIP-email list</a></li>
+              <li><a href="photos.html">photos</a></li>
+            </ul>
+          </nav>
+          <div class="img-and-copyright">
+            <img class="bottom-logo" src="img/kcprimelogo.png" />
+            <p class="copyright">Copyright KC Prime / Dawn Restaurant Inc.</p>
+          </div>
+        </footer>
+      </section>
     </div>
-    <div class="img-click-message">
-      <p>Click each image to view the ingredients</p>
-      <p></p>
-    </div>
-    <section>
-      <div class="menu-container appetizers active">
-        <div class="card-big-container">
-          <div><p>grilled crusted shrimp - 17.00</p></div>
-          <div class="card-container">
-            <div class="card">
-              <div class="front grilled-crusted-shrimp"></div>
-              <div class="back"><p>tangy remoulade, lemon</p></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-big-container">
-          <div><p>sweet and spicy calamari - 14.00</p></div>
-          <div class="card-container">
-            <div class="card">
-              <div class="front calamari"></div>
-              <div class="back">
-                <p>sweet raspberry balsamic, sriracha aioli</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-big-container">
-          <div><p>kc prime sliders - 15.00</p></div>
-          <div class="card-container">
-            <div class="card">
-              <div class="front kc-sliders"></div>
-              <div class="back">
-                <p>pickle, aged cheddar cheese, Hawaiian Roll</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-big-container">
-          <div><p>spicy tuna tacos - 14.00</p></div>
-          <div class="card-container">
-            <div class="card">
-              <div class="front tuna-tacos"></div>
-              <div class="back">
-                <p>wonton shell, spicy aioli, avocado puree</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu-container salads">
-        <div class="card-big-container">
-          <div><p>baby arugula salad - 12.00</p></div>
-          <div class="card-container">
-            <div class="card">
-              <div class="front baby-arugula"></div>
-              <div class="back">
-                <p>
-                  anjou pear, crumbled gorgonzola, candied walnuts, white
-                  balsamic vinaigrette
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu-container sandwiches">
-        <div class="card-big-container">
-          <div><p>kc burger - 16.00</p></div>
-          <div class="card-container">
-            <div class="card">
-              <div class="front kc-burger"></div>
-              <div class="back">
-                <p>
-                  smoked gouda, caramelized onion, crisp bacon, chili aioli,
-                  brioche
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu-container prime-meats">
-        <div class="card-big-container">
-          <div><p>ny strip - 38.00</p></div>
-          <div class="card-container">
-            <div class="card">
-              <div class="front ny-strip"></div>
-              <div class="back">
-                <p>Baked potato, peppercorn steak sauce</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-big-container">
-          <div><p>grilled lamb chops - 46.00</p></div>
-          <div class="card-container">
-            <div class="card">
-              <div class="front lamb-chops"></div>
-              <div class="back">
-                <p>
-                  Yukon gold mashed potatoes, sauteed spinach, port win
-                  demi-glace
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="menu-container specials">
-        <div class="card-big-container">
-          <div><p>chilled seafood appetizer - 47.00</p></div>
-          <div class="card-container">
-            <div class="card">
-              <div class="front chilled-seafood"></div>
-              <div class="back">
-                <p>
-                  1/2 lobster tail, 2 shrimp, 2 scallops, 2 clams, 2 oysters,
-                  ahi tuna
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-big-container">
-          <div><p>18 oz. cowboy ribeye - 69.00?</p></div>
-          <div class="card-container">
-            <div class="card">
-              <div class="front cowboy"></div>
-              <div class="back">
-                <p>
-                  fingerling potatoes tossed with charred scallions, grilled
-                  brocolinni, port wine demi-glace
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-big-container">
-          <div><p>swordfish - ??.00</p></div>
-          <div class="card-container">
-            <div class="card">
-              <div class="front swordfish"></div>
-              <div class="back">vegetable succotash, salsa verde</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-big-container">
-          <div><p>surf and turf - 58.00</p></div>
-          <div class="card-container">
-            <div class="card">
-              <div class="front surf-and-turf"></div>
-              <div class="back">
-                <p>
-                  8 oz. filet mignon, 6 oz. broiled lobster tail, mashed
-                  potatoes, julienne vegetables, drawn butter
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-big-container">
-          <div><p>red snapper - ??.00</p></div>
-          <div class="card-container">
-            <div class="card">
-              <div class="front red-snapper"></div>
-              <div class="back">
-                <p>jasmine rice, spinach, lemon beurre-blanc</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu-container entrees">
-        <div class="card-big-container">
-          <div><p>roasted half chicken - 27.00</p></div>
-          <div class="card-container">
-            <div class="card">
-              <div class="front half-roasted-chicken"></div>
-              <div class="back">
-                <p>Yukon gold mashed potatoes, broccoli, natural jus</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu-container sides">
-        <div class="card-big-container">
-          <div><p>lobster mac n' cheese - 15.00</p></div>
-          <div class="card-container">
-            <div class="card">
-              <div class="front lobster-mac-n-cheese"></div>
-              <div class="back"><p></p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </body>
 </html>
