@@ -107,10 +107,12 @@ header {
   list-style: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .bottom-nav ul > li {
   margin: 1.5em 1.5em;
+  width: max-content;
 }
 
 .bottom-logo {
@@ -220,7 +222,8 @@ header {
     left: 35%;
   }
   .bottom-nav ul > li {
-    margin: 1.5em 5vw;
+    margin: 0 5vw;
+    padding-top: 0.5em;
   }
 }
 
