@@ -17,31 +17,58 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <header>
-      <img src="img/kcprime-logo.png" class="logo" />
-      <button class="mobile-nav-toggle"></button>
-
-      <div class="nav-container" data-visible="false-initial">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="email.html">VIP-Email List</a></li>
-            <li><a href="photos.html">Photos</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
     <div class="container">
-      <form>
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="Last Name" />
-        <input type="text" placeholder="Email Address" required />
-        <input type="date" placeholder="Birthday" />
-        <input type="date" placeholder="Anniversary" />
-        <input type="submit" />
-      </form>
+      <header>
+        <img src="img/kcprime-logo.png" class="logo" />
+        <button class="mobile-nav-toggle"></button>
+
+        <div class="nav-container" data-visible="false-initial">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="email.html">VIP-Email List</a></li>
+              <li><a href="photos.html">Photos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <h1 class="email-title">VIP-Email List</h1>
+      <iframe
+        id="email-iframe"
+        src="https://kcprimelawrenceville.fbmta.com/members/UpdateProfile.aspx?Action=Subscribe"
+        frameborder="0"
+      ></iframe>
+
+      <section class="footer">
+        <footer>
+          <div class="socials">
+            <a href="https://www.facebook.com/KCPrimeSteakhouse/"
+              ><img
+                class="socials-svg facebook"
+                src="img/iconmonstr-facebook-6.svg"
+            /></a>
+            <a href="https://www.instagram.com/kcprimesteakhousenj/"
+              ><img
+                class="socials-svg instagram"
+                src="img/iconmonstr-instagram-11.svg"
+            /></a>
+          </div>
+          <nav class="bottom-nav">
+            <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="menu.html">menu</a></li>
+              <li><a href="email.html">VIP-email list</a></li>
+              <li><a href="photos.html">photos</a></li>
+            </ul>
+          </nav>
+          <div class="img-and-copyright">
+            <img class="bottom-logo" src="img/kcprimelogo.png" />
+            <p class="copyright">Copyright KC Prime / Dawn Restaurant Inc.</p>
+          </div>
+        </footer>
+      </section>
     </div>
   </body>
 </html>

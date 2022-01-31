@@ -56,3 +56,5 @@ menuTabs.forEach(function (menuTab) {
     }
   });
 });
+
+// VIP-email list page
