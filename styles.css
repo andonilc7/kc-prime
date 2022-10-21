@@ -118,11 +118,10 @@ section.top {
     background-color: hsla(var(--clr-burgundy), 0.95);
   }
 
-  @supports (-webkit-backdrop-filter: blur(30px)) {
+  @supports (-webkit-backdrop-filter: blur(1rem)) {
     .nav-container {
       background-color: hsla(var(--clr-light), 0.1);
-      backdrop-filter: blur(30px);
-      -webkit-backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(1rem);
     }
   }
 
