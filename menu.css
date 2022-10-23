@@ -244,7 +244,7 @@
     margin-top: 5px;
     height: 7px;
     width: 2px;
-    background-color: hsla(var(--clr-burgundy), 0.9);
+    background-color: hsla(var(--clr-burgundy), 0.1);
     border: 1px solid hsla(var(--clr-burgundy), 0.9);
   }
 
